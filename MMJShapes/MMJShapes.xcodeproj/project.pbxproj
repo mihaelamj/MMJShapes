@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91AEF9D1767B1CF001C6844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AEF9C1767B1CF001C6844 /* UIKit.framework */; };
+		A91AEF9F1767B1CF001C6844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AEF9E1767B1CF001C6844 /* Foundation.framework */; };
+		A91AEFA11767B1CF001C6844 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AEFA01767B1CF001C6844 /* CoreGraphics.framework */; };
+		A91AEFA71767B1CF001C6844 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A91AEFA51767B1CF001C6844 /* InfoPlist.strings */; };
+		A91AEFA91767B1CF001C6844 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFA81767B1CF001C6844 /* main.m */; };
+		A91AEFAD1767B1CF001C6844 /* MMJShapesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFAC1767B1CF001C6844 /* MMJShapesAppDelegate.m */; };
+		A91AEFAF1767B1CF001C6844 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A91AEFAE1767B1CF001C6844 /* Default.png */; };
+		A91AEFB11767B1CF001C6844 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91AEFB01767B1CF001C6844 /* Default@2x.png */; };
+		A91AEFB31767B1CF001C6844 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91AEFB21767B1CF001C6844 /* Default-568h@2x.png */; };
+		A91AEFB61767B1CF001C6844 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91AEFB41767B1CF001C6844 /* MainStoryboard.storyboard */; };
+		A91AEFB91767B1CF001C6844 /* MMJShapesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFB81767B1CF001C6844 /* MMJShapesViewController.m */; };
+		A91AEFC11767BB9B001C6844 /* MMJDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFC01767BB9B001C6844 /* MMJDrawingView.m */; };
+		A991AC3B1768957A00D1A252 /* MMJDrawingView.h in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFBF1767BB9B001C6844 /* MMJDrawingView.h */; };
+		A991AC3C1768958300D1A252 /* MMJShapeTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = A991AC3A1768924B00D1A252 /* MMJShapeTypes.h */; };
+		A991AC3D176895D600D1A252 /* MMJShapesViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFB71767B1CF001C6844 /* MMJShapesViewController.h */; };
+		A991AC401768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A991AC3F1768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m */; };
+		A991AC431769375400D1A252 /* MMJShapeData.m in Sources */ = {isa = PBXBuildFile; fileRef = A991AC421769375400D1A252 /* MMJShapeData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A91AEF991767B1CF001C6844 /* MMJShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMJShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91AEF9C1767B1CF001C6844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A91AEF9E1767B1CF001C6844 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A91AEFA01767B1CF001C6844 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A91AEFA41767B1CF001C6844 /* MMJShapes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMJShapes-Info.plist"; sourceTree = "<group>"; };
+		A91AEFA61767B1CF001C6844 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A91AEFA81767B1CF001C6844 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A91AEFAA1767B1CF001C6844 /* MMJShapes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMJShapes-Prefix.pch"; sourceTree = "<group>"; };
+		A91AEFAB1767B1CF001C6844 /* MMJShapesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMJShapesAppDelegate.h; sourceTree = "<group>"; };
+		A91AEFAC1767B1CF001C6844 /* MMJShapesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMJShapesAppDelegate.m; sourceTree = "<group>"; };
+		A91AEFAE1767B1CF001C6844 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A91AEFB01767B1CF001C6844 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A91AEFB21767B1CF001C6844 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A91AEFB51767B1CF001C6844 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A91AEFB71767B1CF001C6844 /* MMJShapesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMJShapesViewController.h; sourceTree = "<group>"; };
+		A91AEFB81767B1CF001C6844 /* MMJShapesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMJShapesViewController.m; sourceTree = "<group>"; };
+		A91AEFBF1767BB9B001C6844 /* MMJDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJDrawingView.h; sourceTree = "<group>"; };
+		A91AEFC01767BB9B001C6844 /* MMJDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJDrawingView.m; sourceTree = "<group>"; };
+		A991AC3A1768924B00D1A252 /* MMJShapeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJShapeTypes.h; sourceTree = "<group>"; };
+		A991AC3E1768A26600D1A252 /* UIBezierPath_MMJBezierPathShapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPath_MMJBezierPathShapes.h; sourceTree = "<group>"; };
+		A991AC3F1768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPath_MMJBezierPathShapes.m; sourceTree = "<group>"; };
+		A991AC411769375300D1A252 /* MMJShapeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMJShapeData.h; path = Model/MMJShapeData.h; sourceTree = "<group>"; };
+		A991AC421769375400D1A252 /* MMJShapeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMJShapeData.m; path = Model/MMJShapeData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91AEF961767B1CF001C6844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91AEF9D1767B1CF001C6844 /* UIKit.framework in Frameworks */,
+				A91AEF9F1767B1CF001C6844 /* Foundation.framework in Frameworks */,
+				A91AEFA11767B1CF001C6844 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91AEF901767B1CF001C6844 = {
+			isa = PBXGroup;
+			children = (
+				A91AEFA21767B1CF001C6844 /* MMJShapes */,
+				A91AEF9B1767B1CF001C6844 /* Frameworks */,
+				A91AEF9A1767B1CF001C6844 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A91AEF9A1767B1CF001C6844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A91AEF991767B1CF001C6844 /* MMJShapes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91AEF9B1767B1CF001C6844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A91AEF9C1767B1CF001C6844 /* UIKit.framework */,
+				A91AEF9E1767B1CF001C6844 /* Foundation.framework */,
+				A91AEFA01767B1CF001C6844 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A91AEFA21767B1CF001C6844 /* MMJShapes */ = {
+			isa = PBXGroup;
+			children = (
+				A91AEFB41767B1CF001C6844 /* MainStoryboard.storyboard */,
+				A991AC3A1768924B00D1A252 /* MMJShapeTypes.h */,
+				A991AC3E1768A26600D1A252 /* UIBezierPath_MMJBezierPathShapes.h */,
+				A991AC3F1768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m */,
+				A91AEFBF1767BB9B001C6844 /* MMJDrawingView.h */,
+				A91AEFC01767BB9B001C6844 /* MMJDrawingView.m */,
+				A91AEFB71767B1CF001C6844 /* MMJShapesViewController.h */,
+				A91AEFB81767B1CF001C6844 /* MMJShapesViewController.m */,
+				A991AC441769375800D1A252 /* Model */,
+				A91AEFA31767B1CF001C6844 /* Supporting Files */,
+			);
+			path = MMJShapes;
+			sourceTree = "<group>";
+		};
+		A91AEFA31767B1CF001C6844 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A91AEFAB1767B1CF001C6844 /* MMJShapesAppDelegate.h */,
+				A91AEFAC1767B1CF001C6844 /* MMJShapesAppDelegate.m */,
+				A91AEFA41767B1CF001C6844 /* MMJShapes-Info.plist */,
+				A91AEFA51767B1CF001C6844 /* InfoPlist.strings */,
+				A91AEFA81767B1CF001C6844 /* main.m */,
+				A91AEFAA1767B1CF001C6844 /* MMJShapes-Prefix.pch */,
+				A91AEFAE1767B1CF001C6844 /* Default.png */,
+				A91AEFB01767B1CF001C6844 /* Default@2x.png */,
+				A91AEFB21767B1CF001C6844 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A991AC441769375800D1A252 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A991AC411769375300D1A252 /* MMJShapeData.h */,
+				A991AC421769375400D1A252 /* MMJShapeData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91AEF981767B1CF001C6844 /* MMJShapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91AEFBC1767B1CF001C6844 /* Build configuration list for PBXNativeTarget "MMJShapes" */;
+			buildPhases = (
+				A91AEF951767B1CF001C6844 /* Sources */,
+				A91AEF961767B1CF001C6844 /* Frameworks */,
+				A91AEF971767B1CF001C6844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMJShapes;
+			productName = MMJShapes;
+			productReference = A91AEF991767B1CF001C6844 /* MMJShapes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91AEF911767B1CF001C6844 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MMJShapes;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Token d.o.o.";
+			};
+			buildConfigurationList = A91AEF941767B1CF001C6844 /* Build configuration list for PBXProject "MMJShapes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A91AEF901767B1CF001C6844;
+			productRefGroup = A91AEF9A1767B1CF001C6844 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91AEF981767B1CF001C6844 /* MMJShapes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91AEF971767B1CF001C6844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91AEFA71767B1CF001C6844 /* InfoPlist.strings in Resources */,
+				A91AEFAF1767B1CF001C6844 /* Default.png in Resources */,
+				A91AEFB11767B1CF001C6844 /* Default@2x.png in Resources */,
+				A91AEFB31767B1CF001C6844 /* Default-568h@2x.png in Resources */,
+				A91AEFB61767B1CF001C6844 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91AEF951767B1CF001C6844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A991AC3D176895D600D1A252 /* MMJShapesViewController.h in Sources */,
+				A991AC3C1768958300D1A252 /* MMJShapeTypes.h in Sources */,
+				A991AC3B1768957A00D1A252 /* MMJDrawingView.h in Sources */,
+				A91AEFA91767B1CF001C6844 /* main.m in Sources */,
+				A91AEFAD1767B1CF001C6844 /* MMJShapesAppDelegate.m in Sources */,
+				A91AEFB91767B1CF001C6844 /* MMJShapesViewController.m in Sources */,
+				A91AEFC11767BB9B001C6844 /* MMJDrawingView.m in Sources */,
+				A991AC401768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m in Sources */,
+				A991AC431769375400D1A252 /* MMJShapeData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A91AEFA51767B1CF001C6844 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91AEFA61767B1CF001C6844 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A91AEFB41767B1CF001C6844 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91AEFB51767B1CF001C6844 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91AEFBA1767B1CF001C6844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A91AEFBB1767B1CF001C6844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91AEFBD1767B1CF001C6844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMJShapes/MMJShapes-Prefix.pch";
+				INFOPLIST_FILE = "MMJShapes/MMJShapes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A91AEFBE1767B1CF001C6844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMJShapes/MMJShapes-Prefix.pch";
+				INFOPLIST_FILE = "MMJShapes/MMJShapes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91AEF941767B1CF001C6844 /* Build configuration list for PBXProject "MMJShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91AEFBA1767B1CF001C6844 /* Debug */,
+				A91AEFBB1767B1CF001C6844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91AEFBC1767B1CF001C6844 /* Build configuration list for PBXNativeTarget "MMJShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91AEFBD1767B1CF001C6844 /* Debug */,
+				A91AEFBE1767B1CF001C6844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91AEF911767B1CF001C6844 /* Project object */;
+}
