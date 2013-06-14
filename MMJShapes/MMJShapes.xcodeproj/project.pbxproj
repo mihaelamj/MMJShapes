@@ -24,7 +24,6 @@
 		A991AC3D176895D600D1A252 /* MMJShapesViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFB71767B1CF001C6844 /* MMJShapesViewController.h */; };
 		A991AC401768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A991AC3F1768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m */; };
 		A991AC431769375400D1A252 /* MMJShapeData.m in Sources */ = {isa = PBXBuildFile; fileRef = A991AC421769375400D1A252 /* MMJShapeData.m */; };
-		A9C93B52176B2EBE00415CB9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9C93B51176B2EBE00415CB9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		A991AC3F1768A2D100D1A252 /* UIBezierPath_MMJBezierPathShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPath_MMJBezierPathShapes.m; sourceTree = "<group>"; };
 		A991AC411769375300D1A252 /* MMJShapeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMJShapeData.h; path = Model/MMJShapeData.h; sourceTree = "<group>"; };
 		A991AC421769375400D1A252 /* MMJShapeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMJShapeData.m; path = Model/MMJShapeData.m; sourceTree = "<group>"; };
-		A9C93B51176B2EBE00415CB9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 		A91AEF901767B1CF001C6844 = {
 			isa = PBXGroup;
 			children = (
-				A9C93B51176B2EBE00415CB9 /* README.md */,
 				A91AEFA21767B1CF001C6844 /* MMJShapes */,
 				A91AEF9B1767B1CF001C6844 /* Frameworks */,
 				A91AEF9A1767B1CF001C6844 /* Products */,
@@ -195,7 +192,6 @@
 				A91AEFB11767B1CF001C6844 /* Default@2x.png in Resources */,
 				A91AEFB31767B1CF001C6844 /* Default-568h@2x.png in Resources */,
 				A91AEFB61767B1CF001C6844 /* MainStoryboard.storyboard in Resources */,
-				A9C93B52176B2EBE00415CB9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

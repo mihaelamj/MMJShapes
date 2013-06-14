@@ -39,7 +39,7 @@ Drag the included **UIBezierPath_MMJBezierPathShapes.h, UIBezierPath_MMJBezierPa
 
 Code in your ViewController may look like this:
 
- ``òbjc    
+ ```    
    self.drawingView.shapeType = SStar;
    self.drawingView.frameSize = 5;
    self.drawingView.shapeFill = FStriped;
