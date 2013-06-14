@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Token d.o.o. All rights reserved.
 //
 
-//star triangle ne rade
-
 #import "UIBezierPath_MMJBezierPathShapes.h"
 
 @implementation UIBezierPath(MMJShape)
