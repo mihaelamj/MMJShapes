@@ -152,7 +152,6 @@
         self.opaque = NO;
         [self setColor:[UIColor clearColor]];
         self.initSizeFactor = 1;
-        // Initialization code
     }
     return self;
 }

@@ -14,10 +14,6 @@
 
 #pragma mark - Helpers
 
-//#define STRIPES_OFFSET 0.06
-//#define STRIPES_ANGLE 5
-//#define SYMBOL_LINE_WIDTH 0.02;
-
 #define STRIPE_LINE_WIDTH 0.02;
 #define STRIPE_LINE_DISTANCE 2.95;
 
@@ -53,21 +49,6 @@
                 [stripes addLineToPoint:endPoint];                
             } while (startPoint.y < CGRectGetMaxY(frame));
             
-            
-//            CGPoint start = frame.origin;
-//            CGPoint end = start;
-//            CGFloat dy = frame.size.height * STRIPES_OFFSET;
-//            end.x += frame.size.width;
-//            start.y += dy * STRIPES_ANGLE;
-//            
-
-//            
-//            for (int i = 0; i < 1 / STRIPES_OFFSET; i++) {
-//                [stripes moveToPoint:start];
-//                [stripes addLineToPoint:end];
-//                start.y += dy;
-//                end.y += dy;
-//            }
             stripes.lineWidth = lineThickness;
             [stripes stroke];
             CGContextRestoreGState(UIGraphicsGetCurrentContext());            
@@ -110,10 +91,6 @@
     CGRect frame = [self fittingRect:rect frameSize:frameSize];
     UIBezierPath *trianglePath = [UIBezierPath bezierPath];
     
-//    [path moveToPoint:CGPointMake(CGRectGetMaxX(frame) / 2, 0.0)];
-//    [path moveToPoint:CGPointMake(CGRectGetMaxX(frame), CGRectGetMaxY(frame))];
-//    [path moveToPoint:CGPointMake(0, CGRectGetMaxY(frame))];
-    
     [trianglePath moveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.50000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.00962 * CGRectGetHeight(frame))];
     [trianglePath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 0.02174 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.97115 * CGRectGetHeight(frame))];
     [trianglePath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 0.99275 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.97115 * CGRectGetHeight(frame))];
@@ -136,24 +113,6 @@
     [self finishShapePath:diamondPath color:color frameColor:frameColor frameSize:frameSize fill:fill frame:rect];
     return diamondPath;
 }
-
-//#define DIAMOND_WIDTH 0.15
-//#define DIAMOND_HEIGHT 0.4
-
-//- (void)drawDiamondAtPoint:(CGPoint)point;
-//{
-//    CGFloat dx = self.bounds.size.width * DIAMOND_WIDTH / 2;
-//    CGFloat dy = self.bounds.size.height * DIAMOND_HEIGHT / 2;
-//    UIBezierPath *path = [[UIBezierPath alloc] init];
-//    [path moveToPoint:CGPointMake(point.x, point.y - dy)];
-//    [path addLineToPoint:CGPointMake(point.x + dx, point.y)];
-//    [path addLineToPoint:CGPointMake(point.x, point.y + dy)];
-//    [path addLineToPoint:CGPointMake(point.x - dx, point.y)];
-//    [path closePath];
-//    path.lineWidth = self.bounds.size.width * SYMBOL_LINE_WIDTH;
-//    [self shadePath:path];
-//    [path stroke];
-//}
 
 
 + (UIBezierPath *)mmjBezierPathPolygon:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill
@@ -308,33 +267,5 @@
     [self finishShapePath:path color:color frameColor:frameColor frameSize:frameSize fill:fill frame:frame];
     return path;
 }
-
-
-
-//- (void)drawSquiggleAtPoint:(CGPoint)point;
-//{
-//    CGFloat dx = self.bounds.size.width * SQUIGGLE_WIDTH / 2;
-//    CGFloat dy = self.bounds.size.height * SQUIGGLE_HEIGHT / 2;
-//    CGFloat dsqx = dx * SQUIGGLE_FACTOR;
-//    CGFloat dsqy = dy * SQUIGGLE_FACTOR;
-//    
-//    UIBezierPath *path = [[UIBezierPath alloc] init];
-//    
-//    [path moveToPoint:CGPointMake(point.x - dx, point.y - dy)];
-//    [path addQuadCurveToPoint:CGPointMake(point.x + dx, point.y - dy)
-//                 controlPoint:CGPointMake(point.x - dsqx, point.y - dy - dsqy)];
-//    [path addCurveToPoint:CGPointMake(point.x + dx, point.y + dy)
-//            controlPoint1:CGPointMake(point.x + dx + dsqx, point.y - dy + dsqy)
-//            controlPoint2:CGPointMake(point.x + dx - dsqx, point.y + dy - dsqy)];
-//    [path addQuadCurveToPoint:CGPointMake(point.x - dx, point.y + dy)
-//                 controlPoint:CGPointMake(point.x + dsqx, point.y + dy + dsqy)];
-//    [path addCurveToPoint:CGPointMake(point.x - dx, point.y - dy)
-//            controlPoint1:CGPointMake(point.x - dx - dsqx, point.y + dy - dsqy)
-//            controlPoint2:CGPointMake(point.x - dx + dsqx, point.y - dy + dsqy)];
-//    path.lineWidth = self.bounds.size.width * SYMBOL_LINE_WIDTH;
-//    [self shadePath:path];
-//    [path stroke];
-//}
-
 
 @end
