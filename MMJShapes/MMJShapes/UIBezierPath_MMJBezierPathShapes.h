@@ -1,6 +1,7 @@
 //
 //  UIBezierPath_MMJBezierPathShapes.h
 //  MMJShapes
+//  Category for drawing different shapes
 //
 //  Created by Mihaela Mihaljević Jakić on 6/12/13.
 //  Copyright (c) 2013 Token d.o.o. All rights reserved.
@@ -12,7 +13,7 @@
 @interface UIBezierPath (MMJShape)
 
 
-+ (UIBezierPath *)mmjBezierPathSquare:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
++ (UIBezierPath *)mmjBezierPathRect:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
 
 + (UIBezierPath *)mmjBezierPathDiamond:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
 
@@ -24,7 +25,7 @@
 
 + (UIBezierPath *)mmjBezierPathClover:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
 
-+ (UIBezierPath *)mmjBezierPathSquiggle:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
++ (UIBezierPath *)mmjBezierPathRoundRect:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
 
 + (UIBezierPath *)mmjBezierPathOval:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill;
 

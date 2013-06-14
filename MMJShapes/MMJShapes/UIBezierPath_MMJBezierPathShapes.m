@@ -77,11 +77,23 @@
 
 #pragma mark - Shape Drawing
 
-+ (UIBezierPath *)mmjBezierPathSquare:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill
++ (UIBezierPath *)mmjBezierPathRect:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill
 {
     CGRect frame = [self fittingRect:rect frameSize:frameSize];
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:frame];//can call with self
         
+    [self finishShapePath:path color:color frameColor:frameColor frameSize:frameSize fill:fill frame:frame];
+    return path;
+}
+
+#define RECT_RADIUS 15
+
++ (UIBezierPath *)mmjBezierPathRoundRect:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill
+{
+    CGRect frame = [self fittingRect:rect frameSize:frameSize];
+
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:frame cornerRadius:RECT_RADIUS];
+    
     [self finishShapePath:path color:color frameColor:frameColor frameSize:frameSize fill:fill frame:frame];
     return path;
 }
@@ -230,42 +242,5 @@
     return pikPath;
 }
 
-#define SQUIGGLE_WIDTH 0.12
-#define SQUIGGLE_HEIGHT 0.3
-#define SQUIGGLE_FACTOR 0.8
-
-+ (UIBezierPath *)mmjBezierPathSquiggle:(CGRect)rect color:(UIColor *)color frameColor:(UIColor *)frameColor frameSize:(CGFloat)frameSize fill:(ShapeFill)fill
-{
-    //    UIBezierPath *path = [UIBezierPath bezierPath];
-    //just draw a square, implement later
-//    CGRect frame = [self fittingRect:rect frameSize:frameSize];
-//    UIBezierPath *path = [UIBezierPath bezierPathWithRect:frame];
-//    
-//    [self finishShapePath:path color:color frameColor:frameColor frameSize:frameSize];
-//    return path;
-    
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    CGRect frame = [self fittingRect:rect frameSize:frameSize];
-    
-    CGFloat dx = frame.size.width * SQUIGGLE_WIDTH / 2;
-    CGFloat dy = frame.size.height * SQUIGGLE_HEIGHT / 2;
-    CGFloat dsqx = dx * SQUIGGLE_FACTOR;
-    CGFloat dsqy = dy * SQUIGGLE_FACTOR;
-    
-    CGPoint point = CGPointMake(frame.size.width/2, frame.size.height/2);
-    [path moveToPoint:CGPointMake(point.x - dx, point.y - dy)];
-    [path addQuadCurveToPoint:CGPointMake(point.x + dx, point.y - dy)
-                 controlPoint:CGPointMake(point.x - dsqx, point.y - dy - dsqy)];
-    [path addCurveToPoint:CGPointMake(point.x + dx, point.y + dy)
-            controlPoint1:CGPointMake(point.x + dx + dsqx, point.y - dy + dsqy)
-            controlPoint2:CGPointMake(point.x + dx - dsqx, point.y + dy - dsqy)];
-    [path addQuadCurveToPoint:CGPointMake(point.x - dx, point.y + dy)
-                 controlPoint:CGPointMake(point.x + dsqx, point.y + dy + dsqy)];
-    [path addCurveToPoint:CGPointMake(point.x - dx, point.y - dy)
-            controlPoint1:CGPointMake(point.x - dx - dsqx, point.y + dy - dsqy)
-            controlPoint2:CGPointMake(point.x - dx + dsqx, point.y - dy + dsqy)];
-    [self finishShapePath:path color:color frameColor:frameColor frameSize:frameSize fill:fill frame:frame];
-    return path;
-}
 
 @end

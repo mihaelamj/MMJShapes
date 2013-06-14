@@ -13,7 +13,7 @@
 
 + (CGFloat)maxStringWidth:(NSString *)string
 {        
-    CGSize stringSize = [string sizeWithFont:[UIFont systemFontOfSize:[UIFont systemFontSize] + 15]];
+    CGSize stringSize = [string sizeWithFont:[UIFont systemFontOfSize:[UIFont systemFontSize] + 14]];
     return stringSize.width;
 }
 
@@ -21,12 +21,12 @@
 
 + (CGFloat)maxShapeNameWidth
 {
-    return [MMJShapeData maxStringWidth:@"Squiggle"];
+    return [MMJShapeData maxStringWidth:@"Diamond"];
 }
 
 + (NSArray *)shapeNames
 {
-    return @[@"Square",@"Diamond",@"Polygon",@"Triangle",@"Heart",@"Clover",@"Spades",@"Oval",@"Squiggle",@"Star"];
+    return @[@"Rect",@"RRect",@"Diamond",@"Polygon",@"Triangle",@"Heart",@"Clover",@"Spades",@"Oval",@"Star"];
 }
 
 + (NSUInteger)shapesCount

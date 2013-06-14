@@ -31,7 +31,7 @@
 
 - (ShapeType)shapeType
 {
-    if (_shapeType < SSquare || _shapeType > SStar) _shapeType = SSquare;
+    if (_shapeType < SRect || _shapeType > SStar) _shapeType = SRect;
     return _shapeType;
 }
 
@@ -112,8 +112,11 @@
 {
     switch (self.shapeType)
     {
-        case SSquare :
-            [UIBezierPath mmjBezierPathSquare:rect color:self.color frameColor:self.frameColor frameSize:self.frameSize fill:self.shapeFill];
+        case SRect :
+            [UIBezierPath mmjBezierPathRect:rect color:self.color frameColor:self.frameColor frameSize:self.frameSize fill:self.shapeFill];
+            break;
+        case SRoundRect:
+            [UIBezierPath mmjBezierPathRoundRect:rect color:self.color frameColor:self.frameColor frameSize:self.frameSize fill:self.shapeFill];
             break;
         case SDiamond :
             [UIBezierPath mmjBezierPathDiamond:rect color:self.color frameColor:self.frameColor frameSize:self.frameSize fill:self.shapeFill];

@@ -10,19 +10,18 @@
 #define MMJShapes_MMJShapeTypes_h
 
 typedef enum {
-    SSquare = 0,
-    SDiamond = 1,
-    SPolygon = 2,
-    STriangle = 3,
-    SHeart = 4,
-    SClover = 5,
-    SSpades= 6,
-    SOval = 7,
-    SSquiggle = 8,
-    SStar = 9
+    SRect,
+    SRoundRect,
+    SDiamond,
+    SPolygon,
+    STriangle,
+    SHeart,
+    SClover,
+    SSpades,
+    SOval,
+    SStar
 } ShapeType;
 
-#define SHAPES_COUNT 10
 
 typedef enum {
     FFull,
