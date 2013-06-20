@@ -29,7 +29,6 @@ typedef enum {
     FStriped
 } ShapeFill;
 
-#define FILLS_COUNT 3
 
 
 #endif
