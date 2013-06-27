@@ -44,6 +44,7 @@ Code in your ViewController may look like this:
    self.drawingView.frameSize = 5;
    self.drawingView.shapeFill = FStriped;
 ```
+![Clicky](http://in.getclicky.com/100629064ns.gif)
 
 
 
