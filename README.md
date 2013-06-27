@@ -44,7 +44,8 @@ Code in your ViewController may look like this:
    self.drawingView.frameSize = 5;
    self.drawingView.shapeFill = FStriped;
 ```
-![Clicky](http://in.getclicky.com/100629064ns.gif)
+![Clicky](<a title="Real Time Web Analytics" href="http://clicky.com/100629064"><img alt="Real Time Web Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100629064ns.gif" />)
 
 
 
